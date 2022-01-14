@@ -1,0 +1,8 @@
+{
+  "name": "starter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/leomacode/Natours.git",
+  "author": "leomacode <forza.leoma@gmail.com>",
+  "license": "MIT"
+}

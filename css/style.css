@@ -56,13 +56,13 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 72%, 0% 100%);
 }
 
-.logo-box {
+.header__logo-box {
   width: 4rem;
   position: absolute;
   inset: 2rem auto auto 2rem;
 }
 
-.logo {
+.header__logo {
   width: 100%;
 }
 
@@ -162,7 +162,7 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-.btn-white {
+.btn--white {
   background: #fff;
   color: #777;
   margin-top: 2rem;
@@ -186,7 +186,7 @@ body {
   opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
   animation: buttonMoveIn 500ms ease-in-out 800ms;
   animation-fill-mode: backwards;
 }
