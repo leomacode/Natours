@@ -1,16 +1,8 @@
-/*
-COLORS:
-
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
-
-*/
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  padding: 0;
   margin: 0;
 }
 
@@ -23,6 +15,7 @@ body {
 .flex {
   display: flex;
 }
+
 .text-white {
   color: #fff;
 }
@@ -46,7 +39,7 @@ body {
   background: linear-gradient(
       to right bottom,
       rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 131, 0.8)
+      rgba(40, 180, 133, 0.8)
     ),
     url("./../img/hero.jpg");
   height: 95vh;
@@ -80,7 +73,8 @@ body {
   inset: 50% auto auto 50%;
   transform: translate(-50%, -40%);
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   text-align: center;
 }
 
@@ -101,11 +95,9 @@ body {
     opacity: 0;
     transform: translateX(-130px);
   }
-
   80% {
     transform: translateX(10px);
   }
-
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -117,11 +109,9 @@ body {
     opacity: 0;
     transform: translateY(120px);
   }
-
   80% {
     transform: translateY(-30px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);
@@ -133,7 +123,6 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
-
   100% {
     opacity: 1;
     transform: translateY(0);

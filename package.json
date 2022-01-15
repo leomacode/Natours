@@ -2,7 +2,14 @@
   "name": "starter",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss sass/main.css -w"
+  },
   "repository": "https://github.com/leomacode/Natours.git",
   "author": "leomacode <forza.leoma@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
 }
