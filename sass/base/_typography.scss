@@ -8,4 +8,28 @@
     $color-primary-dark
   );
   display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: 2px;
+  color: transparent;
+  transition: transform 200ms;
+
+  &:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.75rem 0.9rem 1.5rem rgba($color-black, 0.2);
+  }
+}
+
+.heading-tertiary {
+  font-style: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1rem;
+
+  &:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
 }
