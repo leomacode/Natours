@@ -10,19 +10,11 @@
 @import "layout/header";
 @import "layout/grid";
 
+@import "components/btn";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/card";
+@import "components/story";
+@import "components/bg-video";
 
-@import 'components/btn';
-@import 'components/composition';
-@import 'components/feature-box';
-@import 'components/card';
-@import 'components/story';
-
-@import 'pages/home';
-
-
-
-
-
-
-
-
+@import "pages/home";
