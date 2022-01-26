@@ -541,14 +541,42 @@ body {
   clip-path: circle(50% at 50% 50%);
   -webkit-clip-path: circle(50% at 50% 50%);
   transform: skewX(12deg) translate(-2.5rem);
+  position: relative;
 }
 
 .story__img {
   height: 100%;
+  transform: translateX(-35px) scale(1.4);
+  transition: all 300ms ease-in-out;
 }
 
 .story__text {
   transform: skewX(12deg);
+}
+
+.story__caption {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+  backface-visibility: hidden;
+}
+
+.story:hover .story__caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+
+.story:hover .story__img {
+  filter: blur(3px) brightness(80%);
+  -webkit-filter: blur(3px) brightness(80%);
+  transform: translateX(-35px) scale(1);
 }
 
 .section-about {
