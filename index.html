@@ -22,7 +22,30 @@
         <div class="header__logo-box">
           <img src="./img/logo-white.png" alt="logo" class="header__logo" />
         </div>
-        <div class="nav">Menu</div>
+
+        <div class="navigation">
+          <input
+            type="checkbox"
+            class="navigation__checkbox"
+            id="navi-toggle"
+          />
+          <label for="navi-toggle" class="navigation__button">Menu</label>
+          <div class="navigation__background">&nbsp;</div>
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">About Natous</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Your Benefits</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Popular tours</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Book now</a>
+            </li>
+          </ul>
+        </div>
 
         <div class="header__text text-white uppercase">
           <h1>outdoors</h1>
@@ -310,6 +333,72 @@
 
         <div class="u-center-text u-margin-bottom-huge">
           <a href="#" class="btn-text">Discover all tours &rarr;</a>
+        </div>
+      </section>
+
+      <section class="section-book">
+        <div class="row">
+          <div class="book">
+            <div class="book__form">
+              <form action="#" class="form">
+                <div class="u-margin-bottom-big u-margin-bottom-medium">
+                  <h2 class="heading-secondary">Start booking now</h2>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="text"
+                    class="form__input"
+                    placeholder="Full Name"
+                    id="name"
+                    required
+                  />
+                  <label for="name" class="form__label">Full Name</label>
+                </div>
+                <div class="form__group">
+                  <input
+                    type="email"
+                    class="form__input"
+                    placeholder="Email Address"
+                    id="email"
+                    required
+                  />
+                  <label for="email" class="form__label">Full Name</label>
+                </div>
+
+                <div class="form_group">
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="small"
+                      name="size"
+                    />
+                    <label for="small" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Small tour group</label
+                    >
+                  </div>
+
+                  <div class="form__radio-group">
+                    <input
+                      type="radio"
+                      class="form__radio-input"
+                      id="large"
+                      name="size"
+                    />
+                    <label for="large" class="form__radio-label">
+                      <span class="form__radio-button"></span>
+                      Large tour group</label
+                    >
+                  </div>
+                </div>
+
+                <div class="form__group">
+                  <button class="btn btn--green">Next Step &rarr;</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
     </main>
