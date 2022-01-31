@@ -239,10 +239,12 @@ body {
   background-color: #fff;
   height: 4.375rem;
   width: 4.375rem;
+  border-radius: 50%;
   position: fixed;
   top: 3.75rem;
   right: 3.75rem;
   z-index: 1000;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
 }
 
 .navigation__background {
@@ -254,16 +256,16 @@ body {
   top: 4.1rem;
   right: 4.1rem;
   z-index: 100;
-  transform: scale(80);
 }
 
 .navigation__nav {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 500;
+  visibility: hidden;
 }
 
 .navigation__list {
@@ -280,19 +282,30 @@ body {
 }
 
 .navigation__link:link, .navigation__link:visited {
+  display: inline-block;
   font-size: 1.875rem;
   color: #fff;
   padding: 0.625rem 1.25rem;
   text-decoration: none;
   text-transform: uppercase;
   background-size: 220%;
-  background-image: linear-gradient(120deg, pink 0%, pink 50%, white 50%);
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
   transition: background-position 500ms ease-in-out;
+}
+
+.navigation__link:link span, .navigation__link:visited span {
+  margin-right: 0.9375rem;
+  display: inline-block;
 }
 
 .navigation__link:hover, .navigation__link:active {
   color: #55c57a;
   background-position: 100%;
+  transform: translateX(-0.75rem);
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  transform: scale(80);
 }
 
 .btn, .btn:link, .btn:visited {
